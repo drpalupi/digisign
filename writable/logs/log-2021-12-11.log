@@ -1,0 +1,168 @@
+ERROR - 2021-12-11 02:00:45 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-12-11 02:00:45 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#6 C:\Users\freedcode\Documents\digisign-2.0\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#7 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): Myth\Auth\Controllers\AuthController->attemptLogin()
+#8 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#9 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#12 {main}
+CRITICAL - 2021-12-11 02:45:14 --> Call to undefined function App\Controllers\random_string()
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->edited()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-11 02:47:47 --> Call to undefined function App\Controllers\random_string()
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->edited()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-11 07:18:46 --> Undefined array key "dataX"
+#0 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Document.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\freedc...', 90)
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->edited()
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#6 {main}
+CRITICAL - 2021-12-11 09:07:06 --> ErrorException: Invalid signature in C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php:2843
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(1024, 'Invalid signatu...', 'C:\\Users\\freedc...', 2843)
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php(2843): user_error('Invalid signatu...')
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php(3235): phpseclib\Crypt\RSA->_rsassa_pss_verify('EzR2$2fS5qEThT0...', '')
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\paragonie\easyrsa\src\EasyRSA.php(194): phpseclib\Crypt\RSA->verify('EzR2$2fS5qEThT0...', '')
+#4 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Document.php(72): ParagonIE\EasyRSA\EasyRSA::verify('EzR2$2fS5qEThT0...', '', Object(ParagonIE\EasyRSA\PublicKey))
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#6 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#7 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#10 {main}
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-11 09:09:25 --> ErrorException: Invalid signature in C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php:2843
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(1024, 'Invalid signatu...', 'C:\\Users\\freedc...', 2843)
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php(2843): user_error('Invalid signatu...')
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php(3235): phpseclib\Crypt\RSA->_rsassa_pss_verify('EzR2$nOlAKzIwD9...', '')
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\paragonie\easyrsa\src\EasyRSA.php(194): phpseclib\Crypt\RSA->verify('EzR2$nOlAKzIwD9...', '')
+#4 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Document.php(72): ParagonIE\EasyRSA\EasyRSA::verify('EzR2$nOlAKzIwD9...', '', Object(ParagonIE\EasyRSA\PublicKey))
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#6 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#7 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#10 {main}
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-11 09:13:30 --> ErrorException: Invalid signature in C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php:2843
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(1024, 'Invalid signatu...', 'C:\\Users\\freedc...', 2843)
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php(2843): user_error('Invalid signatu...')
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php(3235): phpseclib\Crypt\RSA->_rsassa_pss_verify('EzR2$wmU8KRAe0v...', '')
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\paragonie\easyrsa\src\EasyRSA.php(194): phpseclib\Crypt\RSA->verify('EzR2$wmU8KRAe0v...', '')
+#4 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Document.php(72): ParagonIE\EasyRSA\EasyRSA::verify('EzR2$wmU8KRAe0v...', '', Object(ParagonIE\EasyRSA\PublicKey))
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#6 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#7 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#10 {main}
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-11 09:15:47 --> Cannot use object of type Myth\Auth\Entities\User as array
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-11 09:16:04 --> Cannot use object of type Myth\Auth\Entities\User as array
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-11 09:17:18 --> Undefined array key "name"
+#0 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Document.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\freedc...', 95)
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#6 {main}
+CRITICAL - 2021-12-11 09:17:34 --> Undefined array key "name"
+#0 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Document.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\freedc...', 95)
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#6 {main}
+CRITICAL - 2021-12-11 09:18:36 --> ErrorException: Invalid signature in C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php:2843
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(1024, 'Invalid signatu...', 'C:\\Users\\freedc...', 2843)
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php(2843): user_error('Invalid signatu...')
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\phpseclib\phpseclib\phpseclib\Crypt\RSA.php(3235): phpseclib\Crypt\RSA->_rsassa_pss_verify('EzR2$elUYVKG7a2...', '')
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\paragonie\easyrsa\src\EasyRSA.php(194): phpseclib\Crypt\RSA->verify('EzR2$elUYVKG7a2...', '')
+#4 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Document.php(72): ParagonIE\EasyRSA\EasyRSA::verify('EzR2$elUYVKG7a2...', '', Object(ParagonIE\EasyRSA\PublicKey))
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#6 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#7 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#10 {main}
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-11 09:20:27 --> Undefined array key "encrypted_data"
+#0 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Document.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\freedc...', 100)
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Document->read()
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Document))
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#6 {main}
+ERROR - 2021-12-11 22:28:07 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-12-11 22:28:07 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(156): CodeIgniter\BaseModel->first()
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(20): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#6 C:\Users\freedcode\Documents\digisign-2.0\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#7 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): Myth\Auth\Controllers\AuthController->attemptLogin()
+#8 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#9 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#12 {main}

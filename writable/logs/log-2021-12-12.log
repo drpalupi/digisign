@@ -1,0 +1,59 @@
+CRITICAL - 2021-12-12 09:46:29 --> Attempt to read property "id_number" on null
+#0 C:\Users\freedcode\Documents\digisign-2.0\app\Views\home\profile.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\freedc...', 21)
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\freedc...')
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('home/profile', Array, true)
+#4 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Home.php(43): view('home/profile', Array)
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->profile()
+#6 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#10 {main}
+CRITICAL - 2021-12-12 09:46:42 --> Attempt to read property "id_number" on null
+#0 C:\Users\freedcode\Documents\digisign-2.0\app\Views\home\profile.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\Users\\freedc...', 21)
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\freedc...')
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('home/profile', Array, true)
+#4 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Home.php(43): view('home/profile', Array)
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->profile()
+#6 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#10 {main}
+CRITICAL - 2021-12-12 10:51:15 --> Call to a member function getRandomName() on null
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->updateProfile()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-12 10:51:52 --> Call to a member function getRandomName() on null
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->updateProfile()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-12 10:52:07 --> Call to a member function getRandomName() on null
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->updateProfile()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-12 10:52:11 --> Call to a member function getRandomName() on null
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->updateProfile()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-12 10:58:37 --> Call to a member function getRandomName() on null
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->updateProfile()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}

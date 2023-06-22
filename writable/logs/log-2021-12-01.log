@@ -1,0 +1,38 @@
+CRITICAL - 2021-12-01 07:11:03 --> foreach() argument must be of type array|object, null given
+#0 C:\Users\freedcode\Documents\digisign-2.0\app\Views\home\profile.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argum...', 'C:\\Users\\freedc...', 34)
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\Users\\freedc...')
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('home/profile', Array, true)
+#4 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Home.php(37): view('home/profile', Array)
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->profile()
+#6 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#10 {main}
+CRITICAL - 2021-12-01 07:12:37 --> Call to a member function findAll() on null
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->profile()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#5 {main}
+CRITICAL - 2021-12-01 07:12:56 --> Cannot use object of type stdClass as array
+#0 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\View\View.php(214): include()
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('home/profile', Array, true)
+#3 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Home.php(39): view('home/profile', Array)
+#4 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->profile()
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#9 {main}
+CRITICAL - 2021-12-01 07:28:56 --> Myth\Auth\Authorization\GroupModel::addUserToGroup(): Argument #2 ($groupId) must be of type int, string given, called in C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Home.php on line 49
+#0 C:\Users\freedcode\Documents\digisign-2.0\app\Controllers\Home.php(49): Myth\Auth\Authorization\GroupModel->addUserToGroup(2, '1 selected')
+#1 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Home->updateProfile()
+#2 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\freedcode\Documents\digisign-2.0\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\freedcode\Documents\digisign-2.0\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\freedc...')
+#6 {main}
